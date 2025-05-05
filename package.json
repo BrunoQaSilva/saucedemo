@@ -2,10 +2,11 @@
   "name": "cypress",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
-  },
+"scripts": {
+  "pretest": "echo \"Preparando para rodar os testes...\"",
+  "test:ci": "cypress run",
+  "cypress:open": "cypress open"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
