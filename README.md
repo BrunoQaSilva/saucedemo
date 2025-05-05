@@ -47,7 +47,9 @@ Testes automatizados para a plataforma de testes que simula um site de vendas, s
 `49s + 10s (setup) + 10s (buffer) = ~1 minuto e 10 segundos`
 
 ---
+
 📁 Este cenário está implementado com testes automatizados utilizando [Cypress](https://www.cypress.io) e executado via GitHub Actions.
+
 ---
 
 ### ⏱️ Estimativa de Tempo – Testes Manuais (Cenários 8 a 21)
