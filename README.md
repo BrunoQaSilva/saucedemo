@@ -1,5 +1,7 @@
-# saucedemo
+# Saucedemo
 Testes automatizados para a plataforma de testes que simula um site de vendas, sauce demo. Desfio tecnico.
+
+https://www.saucedemo.com/
 
 ## 🧾 História de Usuário
 
