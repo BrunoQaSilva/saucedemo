@@ -33,7 +33,7 @@ Testes automatizados para a plataforma de testes que simula um site de vendas, s
 
 ---
 
-### ⏱️ Tempo Médio de Execução dos Testes
+### ⏱️ Tempo Médio de Execução dos Testes Automatizados (Cenários 1 ao 7)
 
 - **Cenários total**: 7  
 - **Tempo médio por cenário**: 7 segundos  
@@ -47,5 +47,17 @@ Testes automatizados para a plataforma de testes que simula um site de vendas, s
 `49s + 10s (setup) + 10s (buffer) = ~1 minuto e 10 segundos`
 
 ---
-
 📁 Este cenário está implementado com testes automatizados utilizando [Cypress](https://www.cypress.io) e executado via GitHub Actions.
+---
+
+### ⏱️ Estimativa de Tempo – Testes Manuais (Cenários 8 a 21)
+
+Abaixo está a estimativa de tempo para execução manual dos cenários de teste complementares, que cobrem aspectos de usabilidade, acessibilidade, sessão, filtros e comportamento visual.
+
+| Intervalo de Cenários | Total de Casos | Tempo Médio por Caso | Tempo Total Estimado |
+|------------------------|----------------|------------------------|------------------------|
+| Cenários 8 ao 21       | 14             | 2,5 minutos            | ~35 minutos            |
+
+Esses cenários exigem verificação visual, interação com menus, redirecionamentos, testes de acessibilidade (como navegação por teclado), testes de estado da aplicação e validações de responsividade.
+
+Eles são recomendados para execução exploratória, checklist funcional ou testes de aceitação manual.
