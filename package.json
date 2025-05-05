@@ -1,18 +1,17 @@
 {
   "name": "cypress",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-"scripts": {
-  "pretest": "echo \"Preparando para rodar os testes...\"",
-  "test:ci": "cypress run",
-  "cypress:open": "cypress open"
-},
+  "scripts": {
+    "pretest": "echo \"Preparando para rodar os testes...\"",
+    "test:ci": "cypress run",
+    "cypress:open": "cypress open"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "cypress": "^14.3.2"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
