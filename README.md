@@ -151,5 +151,15 @@
 
 #### 🔹 Cenário 18: Resetar estado da aplicação
 **Dado** que tenho produtos no carrinho  
-**Quando** abro o menu
+**Quando** abro o menu lateral e clico em “Reset App State”  
+**Então** o carrinho é esvaziado  
+**E** todos os produtos voltam a exibir o botão “Add to cart”
 
+---
+
+### 🧩 Funcionalidade: Mensagem de Pedido
+
+#### 🔹 Cenário 19: Confirmar mensagem final de compra
+**Dado** que finalizei uma compra com sucesso  
+**Então** devo ver a mensagem “Thank you for your order!”  
+**E** um botão para retornar à página inicial
