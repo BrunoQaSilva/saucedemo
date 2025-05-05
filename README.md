@@ -54,3 +54,102 @@
 **Dado** que estou na tela de **Checkout: Your Information**  
 **Quando** clico em **“Continue”** sem preencher os campos  
 **Então** devo ver mensagens de erro indicando que os campos são obrigatórios
+
+---
+
+### 🧩 Funcionalidade: Validação de Login
+
+#### 🔹 Cenário 8: Exibição de mensagem de erro ao tentar logar com campos vazios
+**Dado** que estou na página de login  
+**Quando** clico em "Login" sem preencher os campos de usuário e senha  
+**Então** devo ver uma mensagem de erro informando que os campos são obrigatórios
+
+---
+
+✅ Cenários de Teste apenas Manuais
+
+### 🧩 Funcionalidade: Acessibilidade
+
+#### 🔹 Cenário 9: Navegação com teclado
+**Dado** que estou na página de login  
+**Quando** uso apenas a tecla `TAB` para navegar entre os campos e botões  
+**Então** consigo acessar todos os elementos interativos sem precisar do mouse
+
+---
+
+### 🧩 Funcionalidade: Responsividade
+
+#### 🔹 Cenário 10: Acesso em resolução de dispositivo móvel
+**Dado** que acesso o site em um dispositivo com resolução 375x667  
+**Quando** navego pela interface da aplicação  
+**Então** todos os elementos devem estar visíveis e sem rolagem horizontal
+
+---
+
+### 🧩 Funcionalidade: Sessão
+
+#### 🔹 Cenário 11: Logout encerra sessão corretamente
+**Dado** que estou logado na aplicação  
+**Quando** clico no menu lateral e seleciono “Logout”  
+**Então** sou redirecionado para a tela de login  
+**E** não consigo mais acessar a página de produtos sem me autenticar novamente
+
+---
+
+### 🧩 Funcionalidade: Controle de Acesso
+
+#### 🔹 Cenário 12: Impedir acesso direto sem autenticação
+**Dado** que não estou logado  
+**Quando** tento acessar diretamente a URL `/inventory.html`  
+**Então** sou automaticamente redirecionado para a tela de login
+
+---
+
+### 🧩 Funcionalidade: Identidade Visual
+
+#### 🔹 Cenário 13: Verificar exibição do logotipo e nome da aplicação
+**Dado** que acesso qualquer página da aplicação  
+**Então** devo visualizar o logotipo da empresa  
+**E** o nome “Swag Labs” deve estar visível e destacado
+
+---
+
+### 🧩 Funcionalidade: Filtros de Produtos
+
+#### 🔹 Cenário 14: Ordenar produtos por menor preço
+**Dado** que estou na página de produtos  
+**Quando** seleciono o filtro “Price (low to high)”  
+**Então** os produtos devem ser reordenados com os preços do menor para o maior
+
+#### 🔹 Cenário 15: Ordenar produtos por nome decrescente
+**Dado** que estou na página de produtos  
+**Quando** seleciono o filtro “Name (Z to A)”  
+**Então** os produtos devem ser listados em ordem alfabética decrescente
+
+---
+
+### 🧩 Funcionalidade: Estado do Carrinho
+
+#### 🔹 Cenário 16: Carrinho mantém produtos após navegação
+**Dado** que adicionei produtos ao carrinho  
+**Quando** navego para outra página e retorno  
+**Então** o carrinho deve manter os itens adicionados
+
+---
+
+### 🧩 Funcionalidade: Menu Lateral
+
+#### 🔹 Cenário 17: Abrir e fechar o menu lateral
+**Dado** que estou na página de produtos  
+**Quando** clico no ícone de menu (≡)  
+**Então** o menu lateral deve se abrir com as opções  
+**E** ao clicar fora dele, o menu deve ser fechado automaticamente
+
+---
+
+### 🧩 Funcionalidade: Reset App State
+
+#### 🔹 Cenário 18: Resetar estado da aplicação
+**Dado** que tenho produtos no carrinho  
+**Quando** abro o menu
+
