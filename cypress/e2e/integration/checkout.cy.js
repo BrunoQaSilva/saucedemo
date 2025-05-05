@@ -1,7 +1,11 @@
 describe('Checkout', () => {
   beforeEach(() => {
     cy.login()
-    cy.contains('Sauce Labs Backpack').parent().find('button').click()
+    cy.url().should('include', '/inventory.html')
+    cy.contains('.inventory_item', 'Sauce Labs Backpack')
+      .find('button')
+      .click()
+  
     cy.get('.shopping_cart_link').click()
     cy.get('[data-test="checkout"]').click()
   })
